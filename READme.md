@@ -25,7 +25,7 @@ A professional weather dashboard built using HTML, CSS, and JavaScript.
 1. Clone repository
 
 ```bash
-git clone <repository-url>
+git clone  https://222t1a0415-art.github.io/SkyCast-Pro/
 ```
 
 2. Add API key in script.js
