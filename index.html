@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SkyCast Pro</title>
+
+<link rel="icon" href="assets/weather-icons/icon.svg">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>SkyCast Pro</h1>
+
+<div class="controls">
+
+<button id="themeToggle">
+🌙 Theme
+</button>
+
+<button id="unitToggle">
+°C
+</button>
+
+<button id="historyBtn">
+History
+</button>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<div class="search-box">
+
+<input
+type="text"
+id="cityInput"
+placeholder="Search city..."
+>
+
+<button id="searchBtn">
+Search
+</button>
+
+<button id="locationBtn">
+📍 Current Location
+</button>
+
+</div>
+
+<div id="historyPanel" class="hidden">
+<h3>Recent Searches</h3>
+<ul id="historyList"></ul>
+</div>
+
+<div class="weather-card">
+
+<h2 id="cityName">
+Search a city
+</h2>
+
+<img id="weatherIcon">
+
+<p id="description"></p>
+
+<h1 id="temperature">--°</h1>
+
+<div class="details">
+
+<div>
+Humidity
+<p id="humidity">--</p>
+</div>
+
+<div>
+Wind
+<p id="wind">--</p>
+</div>
+
+</div>
+
+</div>
+
+<section class="forecast">
+
+<h2>5-Day Forecast</h2>
+
+<div id="forecastContainer">
+
+</div>
+
+</section>
+
+</div>
+
+<div class="empty-state">
+    <h2>Welcome to SkyCast Pro</h2>
+    <p>
+        Search for any city or use your current location
+        to view live weather conditions and a 5-day forecast.
+    </p>
+</div>
+
+<button id="installBtn" hidden>
+Install App
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
